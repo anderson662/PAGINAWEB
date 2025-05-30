@@ -1,1 +1,140 @@
-body {background-color: antiquewhite;}
+/* Football Page Specific Styles */
+
+/* Descripción */
+.description-section {
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.description-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description-content img {
+    flex: 1;
+    min-width: 300px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.description-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+}
+
+.description-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Atletas */
+.athletes-section {
+    margin: 50px 0;
+}
+
+.athletes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.athlete-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.athlete-card:hover {
+    transform: translateY(-10px);
+}
+
+.athlete-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.athlete-card h3 {
+    color: #2980b9;
+    padding: 15px 20px 5px;
+    font-size: 1.5rem;
+}
+
+.athlete-card p {
+    padding: 0 20px 15px;
+    color: #555;
+}
+
+.athlete-card button {
+    margin: 0 20px 20px;
+}
+
+/* Competiciones */
+.competitions-section {
+    margin: 50px 0;
+}
+
+.competitions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.competition-card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.competition-card:hover {
+    transform: translateY(-5px);
+}
+
+.competition-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.competition-info {
+    padding: 25px;
+    flex: 1;
+}
+
+.competition-info h3 {
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.competition-info p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .competitions-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .competition-card {
+        flex-direction: column;
+    }
+    
+    .competition-card img {
+        width: 100%;
+        height: 180px;
+    }
+}
