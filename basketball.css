@@ -1,6 +1,6 @@
-/* Basketball Page Specific Styles */
+/* estilos de basketball parte de ander */
 
-/* Historia */
+/* aca puse codigo de css historia */
 .history-section {
     margin-bottom: 50px;
     background-color: white;
@@ -33,7 +33,7 @@
     line-height: 1.7;
 }
 
-/* Atletas */
+/* los deportistas con su css*/
 .athletes-section {
     margin: 50px 0;
 }
@@ -78,7 +78,7 @@
     margin: 0 20px 20px;
 }
 
-/* Estadísticas */
+/* este es el apartado de estadisticas de anderson */
 .stats-section {
     margin: 50px 0;
 }
